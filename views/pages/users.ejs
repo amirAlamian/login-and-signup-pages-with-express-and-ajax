@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body>
+    <button class="logout">log out</button>
+    <h2 class="h2">hello</h2>
+    <h2 class="h2"> <%= " "+userInfo.username %></h2>
+    <div class="userinfo">
+        <h3></h3>
+        <div>
+            <p>Username:</p>
+            <input type="text" value="<%= userInfo.username %>" id="username" disabled>
+        </div>
+        <div>
+            <p>Email:</p>
+            <input type="email" value="<%= userInfo.email %>" id="email" disabled>
+        </div>
+        <div>
+            <p>password:</p>
+            <input type="text" value="<%= userInfo.password %>" id="pass" disabled>
+        </div>
+        <button class="edit">edit</button><button class="save">save</button>
+
+
+    </div>
+    <%- include("../partials/scripts") %>
+    <script type="text/javascript">
+    window.onbeforeunload = function() {
+         return "Data will be lost if you leave the page, are you sure?";
+    };
+       
+    </script>
+</body>
+
+</html>

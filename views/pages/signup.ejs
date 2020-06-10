@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body>
+    <section>
+        <h3 class="h3"></h3>
+        <div class="signUp">
+            <div>
+                <p>Username:*</p>
+                <input type="text" id="username"  style="width:500px" placeholder="Username" class="inputSign">
+            </div>
+            <div>
+                <p>Email:*</p>
+                <input type="email" name="email" placeholder="Email address" id="email" style="width:500px" class="inputSign">
+            </div>
+            <div>
+                <p>Password:*</p>
+                <input type="password" name="password" placeholder="Password" id="pass"  style="width:500px" class="inputSign">
+            </div>
+            <p>Gender:*</p>
+            <div class="box">
+                <input type="radio" id="male" name="gender" value="male" class="radioSign"> Male<br>
+                <input type="radio" id="female" name="gender" value="female" class="radioSign"> Female<br>
+                <input type="radio" id="other" name="gender" value="other" class="radioSign"> Other<br>
+            </div>
+
+            <input type="submit" name="sign up" id="signup" style="width:500px" value="Sign up" >
+        </div>
+    </section>
+
+    <%- include("../partials/scripts") %>
+</body>
+
+</html>
